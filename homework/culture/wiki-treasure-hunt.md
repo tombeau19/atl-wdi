@@ -12,24 +12,44 @@ Please do not use any resource other than the class wiki
 to answer these questions.
 
 1.  What are the three requirements for completing this course?
+    i Homework submission needs to be at 80% or higher!!
+    ii Attendance must be consistent (please see the Attendance Policy)
+    iii All unit projects need to be submitted and pressented to the instructional team and should meet project rubric expectations
 2.  At what URL can you find a series of videos covering the terminal, created
     by one of GA's senior instructors?
+    https://github.com/ATL-WDI-Curriculum/atl-wdi/wiki/Lesson-Recordings
 3.  What book by Douglas Crockford is on our recommended reading list?
+    Javascript the Good Parts by Douglas Crockford
 4.  According to our Git style guide, when writing the detailed description of
     a commit in its commit message, what three types of things are most
     important to mention?
+    Why is the change necessary? How does it address the issue? What side-effects does this change?
 5.  What does a bug report need to have before it can be submitted to the bug
     journal?
+    Copy the error message
+    Copy the code in question
+    Write a paragraph explaining
+        -what you thought the error was
+        -what the issue turned out to be
+        -how you solved it
 6.  There are three Git tutorials referenced in the Wiki. What are they?
+    Atlassian Git Tutorials
+    https://github.com/ATL-WDI-Curriculum/atl-wdi/wiki/Git-Cheatsheet
+    https://git-scm.com/documentation
 7.  List at least two basic UI styling tips that will help your projects
     look good.
+    Get rid of the bullet styling on list elements with list-style: none;
+    get rid of the default underlikne and blue color styling on links
 8.  What is the maximum number of absences a student can have, and how many
     'tardies' are equal to an absence?
+    no more than 2 absences
+    2 late arrivals = 1 absence
 9.  Where can you find a directory of publicly-accessible APIs?
     Give at least one URL.
+    https://www.mashape.com/
 10. What two holidays will we have during this course (not counting the long
     winter break)?
-
+    Labor day
 ## Submitting Your Work
 
 When you're ready, create an issue on the class repo with
