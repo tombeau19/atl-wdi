@@ -52,8 +52,17 @@ to answer these questions.
     Labor day
 ## Submitting Your Work
 
-When you're ready, post your Github link for this assignment to Schoology with:
+When you're ready, create an issue on the class repo with
+a title in the format "YourGitHubUsername -- Week 01 Day 01".
+The issue body should have:
 
-- A link to the file containing your homework answers
-- A 'comfort' score on how you feel about your answers, 
-from 1 (very uncomfortable) to 5 (very comfortable)
+-   Answers to each of the questions above, in the following format:
+
+    ```text
+    1. Answer one.
+    2. A) Answer two, part one, B) Answer two, part two
+    ...
+    ```
+
+-   A 'comfort' score on how you feel about your answers, from 1 (very
+    uncomfortable) to 5 (very comfortable)
