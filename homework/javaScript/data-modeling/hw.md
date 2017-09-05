@@ -60,13 +60,37 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+const projects {
+  description: 'this project will blah blah blah',
+  dueDate: '9/15/17',
+  setOfTasks: 'a, b, c, d, e ....'
+}
+
+const tasks {
+  startDate: '5/2/17',
+  completionTime: '5 hours',
+  finished: true,
+}
+
+The app is meant to track the different tasks that make up larger projects. We need to be able to 'click' to see all of its big picture details. then, within projects, we will need to drill into more detailed tasks with their own set of details.
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+const photos = {
+  imgSrc: 'img',
+  location: 'boston',
+  people: 'bill',
+  scenerary: 'charles river'
+}
+
+const albums = {
+  name: 'album name',
+  time: 'may 2017',
+}
+
+The app will have individual photos with their own properties. using these properties the app will automatically group them by like location and date of picture.
 
 ### 3. Home Automation Manager
 
@@ -75,7 +99,16 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+const lights = function (time, movement) {
+  //turn on based on movement
+  //turn on based on time
+}
+
+const thermostat = function (temperature) {
+  //turn on/off based on temperature
+}
+
+The goal is for this system to be automatic. the lights should function based on movement and time of day. the thermostat should function based on inside temperature. these are all based of user presets.
 
 ### 4. Sneaker Store
 
@@ -83,7 +116,21 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
+const products = {
+  make: 'nike',
+  size: '10.5',
+  style: 'jordan',
+  price: '$400.00'
+}
+
+const cart = {
+  //array of products objects
+}
+
+//if (cart purchased) {
+  //store as a past order}
+
+The products are all available for the user to browse. Once selected they are pushed to cart array. That array is then pushed to 'past carts' once the purchase is complete.
 
 ## Representing Abstractions in Code
 
@@ -139,7 +186,9 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
+Advantages -- The Rail Line will provide a sequential list of stations, so depending on start point can return desired information.
+
+Disadvantages -- A rider likely has to switch Rail Lines during the trip.
 
 ### 6. Doctor Appointment App
 
@@ -242,7 +291,9 @@ Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
 
-> Answer here
+Option 1 -- This would be my choice if I were a doctor using this interface. I have better access to all appointment information based on me, one specific Doctor.
+
+Option 2 -- This would be my choise if I were the receptionist or scheduler. The can see a block of appointments and gauge availibility before assigning to a specific doctor or patient.
 
 ## Tying It Together
 
@@ -253,13 +304,36 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+A Player has:
+-  a username
+-  a team or side
+-  an input
+
+A board has:
+-  dimensions
+-  set spaces
+- 
 
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+const playerA = {
+  username: 'tombeau19',
+  team: 'X',
+  //input: location where the X is placed
+}
+
+const playerB = {
+  username: 'bo',
+  team: 'O',
+  //input: location where the O is placed
+}
+
+const board = {
+  grid: 3x3,
+  //fill up spot where user places token,
+}
 
 c.  Justify your choices in a) and b). Why these entities? Why these
     representations?
 
-  > Answer here
+The 2 users will need to be assigned X or O and will have their own name properties. The board must be set as a 3x3 grid and be responsive to user input.
