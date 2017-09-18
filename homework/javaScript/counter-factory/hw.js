@@ -8,7 +8,7 @@
 const CounterCollection = {
   lastCountId: 0,
   counters: [], // e.g. {countId: 3, count: 20}
-  createCounter: function(){
+  createCounter: function () {
     this.lastCountId++;
     this.counters.push({
       countId: this.lastCountId,
@@ -16,16 +16,16 @@ const CounterCollection = {
     });
     return this.lastCountId;
   },
-  getCounterValue: function(countId){
+  getCounterValue: function (countId) {
     console.log(`read counter #${countId}`);
-    let counter = this.counters.find(function(counter){
+    let counter = this.counters.find(function (counter) {
       return counter.countId === countId;
     });
     if (counter) { return counter.count; }
   },
-  incrementCounter: function(countId){
+  incrementCounter: function (countId) {
     console.log(`increment counter #${countId}`);
-    let counter = this.counters.find(function(counter){
+    let counter = this.counters.find(function (counter) {
       return counter.countId === countId;
     });
     if (counter) {
@@ -33,13 +33,13 @@ const CounterCollection = {
       return counter.count;
     }
   },
-  destroyCounter: function(countId){
+  destroyCounter: function (countId) {
     console.log(`destroy counter #${countId}`);
-    let counter = this.counters.find(function(counter){
+    let counter = this.counters.find(function (counter) {
       return counter.countId === countId;
     });
     if (counter) { counter.destroy(); }
-    this.counters = this.counters.filter(function(counter){ //
+    this.counters = this.counters.filter(function (counter) { //
       return counter.countId !== countId
     });
   }
@@ -47,15 +47,23 @@ const CounterCollection = {
 
 // UI //
 const Presenter = {
-  insertCounterComponent: function(newCountId){
+  insertCounterComponent: function (newCountId) {
     console.log(`insert counter component #${newCountId}`);
-    // Your Code Here
+    // When the 'New Counter!' button is clicked, a new counter appears on the
+    // page, containing:
+    // *  a visible count value
+    // *  a +1 (i.e. 'increment') button
+    //2. When the 'increment' button for a given counter is clicked, the count value
+    // shown on the counter increases by 1.
+    const newCounter = document.createElement("div");
+    newCounter.innerHTML = "<h3>Count: <span>0</span></h3><button class='increment'> + 1 </button>";
+    
   },
-  refreshCounterComponent: function(countId){
+  refreshCounterComponent: function (countId) {
     console.log(`refresh counter component #${countId}`);
     // Your Code Here
   },
-  removeCounterComponent: function(countId){             // REACH
+  removeCounterComponent: function (countId) {             // REACH
     console.log(`remove counter component #${countId}`);
     // Your Code Here
   }
@@ -63,17 +71,17 @@ const Presenter = {
 
 // Top-Level Application Control //
 const AppController = {
-  onClickNewCounter: function(event){
+  onClickNewCounter: function (event) {
     // Your Code Here
   },
-  onClickIncrement: function(event){
+  onClickIncrement: function (event) {
     // Your Code Here
   },
-  onClickDelete: function(event){                           // REACH
+  onClickDelete: function (event) {                           // REACH
     // Your Code Here
   }
 };
 
-window.onload = function(){
+window.onload = function () {
   document.getElementById('new-counter').onclick = AppController.onClickNewCounter;
 };
