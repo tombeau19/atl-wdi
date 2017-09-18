@@ -5,37 +5,64 @@
 
 ### The 6 highest-starred npm packages are:
 
-# Library 1 Name
+# Library 1 lodash
 
 ### Description:
-brief brief description here
+Lodash is designed to take out the hassle of working with arrays, numbers, objects, strings,etc. They use modular methods for 
+-Iterating arrays, objects, & strings
+-Manipulating & testing values
+-Creating composite functions
+
+My source for the above description is lodash.com
 
 ### Total Downloads last month:
 
-# Library 2 Name
+41,940,296 downloads in the last month -- npmjs.com
+
+# Library 2 request
 
 ### Description:
-brief description here
+
+Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default - npmjs.com/package/request/
 
 ### Total Downloads last month:
 
-# Library 3 Name
+22,450,512 downloads in the last month
+
+# Library 3 async
 
 ### Description:
-brief description here
+provides functions for working with asynchronous JavaScript- www.npmjs.com/package/async
 
 ### Total Downloads last month:
 
-# Library 4 Name
+44,789,806 downloads in the last month
+
+# Library 4 chalk
 
 ### Description:
-brief description here
+terminal styling done right - it is actively maintained, clean and focused, and automatically uses color support -- www.npmjs.com/package/chalk
 
 ### Total Downloads last month:
 
-# Library 5 Name
+31,744,880 downloads in the last month
+
+####31,744,880 downloads in the last month
+
+# Library 5 express
 
 ### Description:
-brief description here
+Fast, unopinionated, minimalist web framework for Node.js -- https://www.npmjs.com/package/express
+
+Express is much less opinionated. We have a lot of freedom in how we structure our application (folders and files, how to load different files, how to manage dependencies, etc). -- https://github.com/ATL-WDI-Curriculum/atl-wdi/blob/master/instructor_notes/express/intro-to-express.md
 
 ### Total Downloads last month:
+14,187,532 downloads in the last month
+
+# Library 6 bluebird
+
+### Description:
+Bluebird is a fully featured promise library with focus on innovative features and performance -- https://www.npmjs.com/package/bluebird
+
+### Total Downloads last month:
+17,076,555 downloads in the last month
