@@ -1,9 +1,11 @@
-const express = require('express');
+const express = require ("express");
 const app = express();
 const hbs = require('hbs');
 
+app.set("view engine", "hbs");
+app.use(express.static(__dirname + "/public"));
 
-const port = 3002;
-app.listen(port, () => {
-    console.log('listening on port', port);
-})
+const PORT = 3002;
+app.listen(PORT, () => {
+    console.log("listening on port", PORT);
+});
