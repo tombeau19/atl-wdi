@@ -57,6 +57,8 @@ const Presenter = {
     // shown on the counter increases by 1.
     const newCounter = document.createElement("div");
     newCounter.innerHTML = "<h3>Count: <span>0</span></h3><button class='increment'> + 1 </button>";
+    newCounter.addClass('counter');
+    
     
   },
   refreshCounterComponent: function (countId) {
