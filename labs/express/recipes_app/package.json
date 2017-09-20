@@ -1,5 +1,5 @@
 {
-  "name": "pizza-express",
+  "name": "recipes_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,3 @@
     "hbs": "^4.0.1"
   }
 }
-
-
-
