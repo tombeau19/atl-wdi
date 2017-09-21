@@ -1,10 +1,17 @@
 <h1> You Have {{numTotal}} Todos </h1>
 <ul>
   {{#each todos}}
-    <li>Description: {{description}}</li>
-    <li>Urgent: {{urgent}}</li>
-    <br>
-  {{/each}}
+  <li>Description: {{description}}</li>
+  <li>Urgent: {{urgent}}</li>
+  <li>Location: {{location}}</li>
+  <form action="/todos/{{@index}}/edit">
+    <input type="submit" value="EDIT" />
+  </form>
+  <form action="/todos/{{@index}}?_method=DELETE" method="POST">
+    <input type="submit" value="completed" />
+  </form>
+  <hr>
+  <br> {{/each}}
 </ul>
 
 <a href="/todos/new">Create a Todo</a>

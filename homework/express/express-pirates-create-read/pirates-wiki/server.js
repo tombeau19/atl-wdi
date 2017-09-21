@@ -2,9 +2,10 @@ const express = require('express');
 const app = express();
 const hbs = require('hbs');
 const bodyParser = require('body-parser');
-const pirateController = require('./controllers/pirates.js')
+const pirateController = require('./controllers/pirates.js');
+const methodOverride = require('method-override');
 
-
+app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({
     extended: true
 }));

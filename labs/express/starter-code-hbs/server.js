@@ -1,18 +1,19 @@
 /* packages */
 const path        = require('path');
-const logger      = require('morgan');
 const express     = require('express');
 const hbs         = require('hbs');
 const bodyParser  = require('body-parser');
+const methodOveride = require('method-override');
 /* app settings*/
 const app         = express();
 const port        = process.env.PORT || 3000;
 const todosController = require('./controllers/todos');
 /* set up the application params*/
 
+//DELETE - how to use method overide
+app.use(methodOveride('_method'));
 
-// log
-app.use( logger('dev'));
+// body parser
 app.use(bodyParser.urlencoded({
   extended: true
 }));

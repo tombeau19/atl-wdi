@@ -2,16 +2,20 @@ module.exports = {
 seededTodos: [
     {
       description: "get beer",
-      urgent: true
+      urgent: true,
+      location: 'package store'
     }, {
       description: "dry cleaning",
-      urgent: false
+      urgent: false,
+      location: 'carriage cleaners'
     }, {
       description: "learn express",
-      urgent: true
+      urgent: true,
+      location: 'GA'
     }, {
       description: "pay water bill",
-      urgent: false
+      urgent: false,
+      location: 'home'
     }
   ]
 }

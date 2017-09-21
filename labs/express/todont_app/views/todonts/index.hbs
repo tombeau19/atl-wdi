@@ -1,0 +1,18 @@
+<h1>You have {{numTotal}} ToDonts</h1>
+
+<ul>
+    {{#each todonts}}
+    <li>Description: {{description}}</li>
+    <li>Urgent: {{urgent}}</li>
+    <form action="/todonts/{{@index}}/edit">
+        <input type="submit" value="EDIT" />
+    </form>
+    <form action="/todonts/{{@index}}?_method=DELETE" method="POST">
+        <input type="submit" value="Delete">
+    </form>
+
+    <hr>
+    <br> {{/each}}
+</ul>
+
+<a href="/todonts/new">Create a new To-Dont</a>
