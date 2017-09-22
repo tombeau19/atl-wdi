@@ -15,8 +15,10 @@ class Tamagotchi {
 }
 
 const tamaOne = new Tamagotchi;
+const tamaTwo = new Tamagotchi;
 
 tamaOne.cry();
+tamaTwo.cry();
 
 
 //create new Tamagotchis
