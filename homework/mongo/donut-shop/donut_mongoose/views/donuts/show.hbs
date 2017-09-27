@@ -1,47 +1,50 @@
 <main>
 
-	<h2>You are viewing:
-
-		<<<< DONUT NAME HERE >>>>
+	<h2>You are viewing: {{donut.name}}
 
 	</h2>
-
-	<a href="/">Return to Home Page</a>
-
+	<div>
+		<h3> <a href="/">Return to Home Page</a></h3>
+	</div>
 	<div class="donut-container-show">
 		<h2 id="donut-name">
 
-				<<<< DONUT NAME HERE >>>>
+			{{donut.name}}
 
 		</h2>
 
-				<<<< DONUT IMAGE HERE >>>>
+		<img src="{{donut.img}}" alt="">
 
 		<br>
 		<h3>Description:</h3>
-			<p>
+		<p>
 
-				<<<< DONUT DESCRIPTION HERE >>>>
+			{{donut.description}}
 
-			</p><br>
+		</p><br>
 		<h3>Price:</h3>
-			<p id="cost">$
+		<p id="cost">$ {{donut.price}} each</p><br>
 
-				<<<< DONUT PRICE HERE >>>> each</p><br>
+		<h3 id="quantity">
 
-			<h3 id="quantity">
+			{{donut.qty}} remaining
 
-	 				<<<< DONUT QUANTITY >>>> remaining
+		</h3>
 
-			</h3>
-
-			<br>
-
-			<<<< LINK TO THE DONUT's EDIT PAGE >>>>
-
-			<<<< BONUS: BUTTON THAT UPDATES THE COUNT >>>>
-
+		<br>
+		<div>
+			<a href="/{{donut._id}}/edit">Edit</a>
+		</div>
+		<div>
+			<form action="/{{donut._id}}?_method=DELETE" method='POST'>
+				<input type="submit" value='Delete'>
+			</form>
 		</div>
 
-		<<<< BUTTON THAT DELETED THE DONUT >>>>
+
+	
+
+	</div>
+
+	<<<< BONUS: BUTTON THAT UPDATES THE COUNT>>>>
 </main>

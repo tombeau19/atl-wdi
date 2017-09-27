@@ -25,6 +25,10 @@ app.set('views', './views');
 app.use(express.static(__dirname + 'public'));
 app.use( logger('dev'));
 
+/*app.get('/', (req, res) => {
+    res.redirect('/donuts')
+})*/
+
 //======================
 // CONTROLLERS
 //======================
