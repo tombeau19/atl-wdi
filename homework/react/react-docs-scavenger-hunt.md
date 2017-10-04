@@ -19,17 +19,24 @@
   This allows our components to be pure.
 
 5. Are all components classes? 
-    
+    no, there are functional components as well. as long as it accepts a single 'prop' and returns a React element
     
 6. List five "Synthetic Events" provided by React:
+    onToggle, onScroll, onSelect, onChange, onFocus, onBlur -- https://reactjs.org/docs/events.html
 
 7. Do we have to use ES6 syntax with React?
+    You do not, but it is recommended. you would have to use the 'create-react-class' model without it --
+    https://reactjs.org/docs/react-without-es6.html
 
 8. Where can I go to check out React's built-in Accessibility features?
+    -- https://reactjs.org/docs/accessibility.html
 
 9. List five React Component Lifecycle Methods:
+    mounting - set up, unmounting - clearing, didmount, willunmount, setState -- these are 'lifecycle hooks' 
+    --https://reactjs.org/docs/state-and-lifecycle.html
 
 10. Where would I go to check out React's built-in testing tools?
+    --https://reactjs.org/docs/test-renderer.html
 
 ### Turning in:
 
