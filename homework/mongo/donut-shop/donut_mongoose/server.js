@@ -2,13 +2,13 @@
 // REQUIREMENTS
 //======================
 // require express, mongoose, body-parser, method-override
-var express = require("express");
-var app = express();
-var mongoose = require("mongoose");
-var bodyParser = require("body-parser");
-var methodOverride = require("method-override");
-var hbs = require("hbs");
-var logger = require('morgan');
+const express = require("express");
+const app = express();
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const methodOverride = require("method-override");
+const hbs = require("hbs");
+const logger = require('morgan');
 
 
 //======================
@@ -33,11 +33,11 @@ app.use( logger('dev'));
 // CONTROLLERS
 //======================
 //for seed file, seed the database
-var seedController = require('./controllers/seeds.js');
+const seedController = require('./controllers/seeds.js');
 app.use('/seed', seedController);
 
 //for root directory, show all donuts
-var donutsController = require('./controllers/donuts.js');
+const donutsController = require('./controllers/donuts.js');
 app.use('/', donutsController);
 
 //======================

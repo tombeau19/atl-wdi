@@ -1,11 +1,11 @@
 //requirements: require mongoose
-var mongoose = require("mongoose");
+const mongoose = require("mongoose")
 mongoose.Promise = global.Promise
 
 //create your donut schema:
 const Schema = mongoose.Schema
 
-var DonutSchema = new Schema({
+const DonutSchema = new Schema({
     //write your schema fields here
     name: String,
     description: String,
