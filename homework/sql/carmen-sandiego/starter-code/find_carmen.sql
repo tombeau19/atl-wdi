@@ -13,11 +13,18 @@ SELECT * FROM country WHERE code='ITA' OR code='SMR' OR code='CHE';
 
 --Clue #4
 SELECT * FROM city WHERE countrycode='ITA' OR countrycode='SMR' OR countrycode='CHE';
---answer Serravalle/Dogano
+--Answer: Serravalle
 
+--Clue #5
+SELECT * FROM city WHERE name LIKE 'Serra%';
+SELECT * FROM country WHERE code='BRA';
+--Answer: Brazil
 
+--Clue #6
+SELECT capital FROM country WHERE name='Brazil';
+SELECT * FROM city WHERE id=211;
+--Answer: Brasilia
 
-
-
-
-commit after 4
+--Clue #7
+SELECT name, countrycode FROM city WHERE population = 91084;
+--Answer: Santa Monica, USA
