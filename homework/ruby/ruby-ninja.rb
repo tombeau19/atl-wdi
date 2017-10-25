@@ -39,16 +39,25 @@
 
 ############### Challenge 5 ###############
 
-user_number = gets
-puts user_number.to_i * 2
+# user_number = gets
+# puts user_number.to_i * 2
 
-puts "name?: "
-user_name = gets
+# puts "name?: "
+# user_name = gets
 
-puts "what do you like to do?: "
-user_likes = gets
+# puts "what do you like to do?: "
+# user_likes = gets
 
-puts "#{user_name} likes #{user_likes}"
+# puts "#{user_name} likes #{user_likes}"
+
+############### Challenge 6 ###############
+
+my_firt_array = []
+
+############### Challenge 7 ###############
+############### Challenge 8 ###############
+############### Challenge 9 ###############
+
 
 
 
