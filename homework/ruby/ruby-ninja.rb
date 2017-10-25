@@ -15,14 +15,26 @@
 
 # puts a.class 
 
-############### Challenge 2 ###############
-d = Fixnum
-puts d
+############### Challenge 3 ###############
+# d = Fixnum
+# puts d
 
-e = Float
-puts e
+# e = Float
+# puts e
 
-d = e
-puts d
+# d = e
+# puts d
+
+############### Challenge 4 ###############
+# christine = "Hi I'm Christine"
+# likesTo = "long walks on the beach, kinda."
+
+# puts "#{christine} and I #{likesTo}"
+
+g = "2"
+
+gToNumber = 2
+
+puts g.to_i + gToNumber
 
 
