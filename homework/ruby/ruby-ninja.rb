@@ -31,10 +31,24 @@
 
 # puts "#{christine} and I #{likesTo}"
 
-g = "2"
+# g = "2"
 
-gToNumber = 2
+# gToNumber = 2
 
-puts g.to_i + gToNumber
+# puts g.to_i + gToNumber
+
+############### Challenge 5 ###############
+
+user_number = gets
+puts user_number.to_i * 2
+
+puts "name?: "
+user_name = gets
+
+puts "what do you like to do?: "
+user_likes = gets
+
+puts "#{user_name} likes #{user_likes}"
+
 
 
