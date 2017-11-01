@@ -53,6 +53,7 @@
 ############### Challenge 6 ###############
 
 my_firt_array = []
+my_firt_array.push('string1', 'string2', 'string3', 'string4', 'string5', 3, 5, 9, 11)
 
 ############### Challenge 7 ###############
 ############### Challenge 8 ###############
